@@ -4,9 +4,9 @@ def readme():
   with open('README.md', 'r') as f:
     return f.read()
 
-setup(name='pihole_client',
+setup(name='npm_client',
       version='1.0.0',
-      description='Execute API calls to Pi-hole from python code',
+      description='Python client for Nginx Proxy Manager',
        long_description=readme(),
       long_description_content_type='text/markdown',
       install_requires=[
@@ -15,7 +15,7 @@ setup(name='pihole_client',
             'pydantic==2.9.2'
       ],
       license = "MIT",
-      packages=['pihole_client'],
-      url='https://github.com/ErilovNikita/pihole-client',
+      packages=['npm_client'],
+      url='https://github.com/ErilovNikita/npm-client',
       author_email='minitwiks@gmail.com',
       zip_safe=False)
