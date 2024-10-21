@@ -5,7 +5,7 @@ def readme():
     return f.read()
 
 setup(name='npm_client',
-      version='1.0.0',
+      version='1.0.1',
       description='Python client for Nginx Proxy Manager',
        long_description=readme(),
       long_description_content_type='text/markdown',
