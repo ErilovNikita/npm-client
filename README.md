@@ -1,4 +1,4 @@
-# pihole-client
+# npm-client
 [![PyPI Version](https://img.shields.io/pypi/v/npm-client)](https://pypi.org/project/npm-client)
 
 Python client for Nginx Proxy Manager
