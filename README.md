@@ -40,17 +40,17 @@ if __name__ == "__main__":
 
 ## Methods
 ```python
-# 
+# Get a list of certificates
 npmClient.get_certificates()
-
+# Get certificate by name
 npmClient.get_certificate_by_name(certificate_name="home.homelab.lan")
-
+# Get proxy hosts list
 npmClient.get_proxy_hosts()
-
+# Get proxy host by one of the domains
 npmClient.get_proxy_host_by_domian(domain="home.homelab.lan")
-
+# Get proxy host by its id
 npmClient.get_proxy_host_by_id(id=1)
-
+# Create new proxy host
 npmClient.create_proxy_host(
     domain_names=["router.homelab.lan", "router2.homelab.lan"],
     forward_scheme="http",
@@ -61,6 +61,6 @@ npmClient.create_proxy_host(
     ssl_forced=True,
     certificate_id=1,
 )
-
+# Delete proxy host
 npmClient.delete_proxy_host(id=1)
 ```
