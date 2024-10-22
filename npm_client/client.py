@@ -77,7 +77,10 @@ class NginxClient:
         """Get proxy host by one of the domains"""
         proxy_hosts = self.get_proxy_hosts()
         for proxy_host in proxy_hosts:
-            if domain.lower() in proxy_host.domain_names.lower():
+            domain_list = []
+            for domain_name in proxy_host.domain_names:
+                domain_list.append( domain_name.lower() )
+            if domain.lower() in domain_list:
                 return proxy_host
 
     def get_proxy_host_by_id(self, id: int) -> ProxyHost:
