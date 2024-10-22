@@ -37,7 +37,7 @@ class ProxyHost(BaseModel):
     caching_enabled: int
     block_exploits: int
     advanced_config: str
-    meta: dict
+    meta: dict | None = None
     allow_websocket_upgrade: int
     http2_support: int
     forward_scheme: str
@@ -45,4 +45,4 @@ class ProxyHost(BaseModel):
     locations: list
     hsts_enabled: int
     hsts_subdomains: int
-    certificate: Certificate
+    certificate: Certificate | None = None
